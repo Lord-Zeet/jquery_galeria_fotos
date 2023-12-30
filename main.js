@@ -10,7 +10,6 @@ $(document).ready(function(){
     $('form').on('submit', function(e){
         e.preventDefault();
         const enderecoNovaImagem = $('#endereco-imagem-nova').val();
-        console.log(enderecoNovaImagem);
         const novoItem = $('<li style="display: none"></li>');
         $(`<img src="${enderecoNovaImagem}"/>`).appendTo(novoItem);
         $(`
